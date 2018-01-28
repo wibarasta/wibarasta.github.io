@@ -18,7 +18,10 @@ body {
     margin: 0;
 }
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+}
+
 body, html {
     height: 100%;
     color: #777;
@@ -67,8 +70,6 @@ body, html {
 }
 
 
-
-/* media rule min 600px */
 @media (max-width:600px) {
   .nw-modal-content { 
       margin: 0 10px;
@@ -77,9 +78,11 @@ body, html {
   .nw-modal {
       padding-top: 30px
     }
+    
   /*.nw-dropdown-hover.nw-mobile .nw-dropdown-content,.nw-dropdown-click.nw-mobile .nw-dropdown-content {
       position: relative;
-    }*/	
+    }*/
+    
   .nw-hide-small {
       display: none!important;
     } 
@@ -96,7 +99,7 @@ body, html {
     .nw-hide-large {display:none!important}
     .nw-sidebar.nw-collapse {display:block!important}
 }
-/* end media rule min 600px */
+
 
 /* media rule min 601px */
 @media (min-width:601px) {
@@ -148,7 +151,7 @@ body, html {
 .nw-col.s9 {width:74.99999%}
 .nw-col.s10 {width:83.33333%}
 .nw-col.s11 {width:91.66666%}
-.nw-col.s12 {width:99.99999%}
+.nw-col.s12 {width:99.99999%} 
 
 
 /* section 1 */
@@ -165,7 +168,7 @@ body, html {
 }
 
 .nw-bar .nw-bar-item {
-    padding:8px 16px;
+    padding: 8px 16px;
     float: left;
     width: auto;
     border: none;
