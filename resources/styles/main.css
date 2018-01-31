@@ -69,7 +69,7 @@ body, html {
     }
 }
 
-
+/*media rule for small screen */
 @media (max-width:600px) {
   .nw-modal-content { 
       margin: 0 10px;
@@ -79,21 +79,19 @@ body, html {
       padding-top: 30px
     }
     
-  /*.nw-dropdown-hover.nw-mobile .nw-dropdown-content,.nw-dropdown-click.nw-mobile .nw-dropdown-content {
-      position: relative;
-    }*/
-    
   .nw-hide-small {
       display: none!important;
     } 
 }
 
+/* media rule for medium screen */
 @media (max-width:992px) and (min-width:601px) {
     .nw-hide-medium{
         display:none!important;
     }
 }
 
+/* media rule for large screen */
 @media (min-width:993px) {
     .nw-modal-content {width:900px}
     .nw-hide-large {display:none!important}
@@ -197,10 +195,6 @@ body, html {
     white-space: normal;
     float: none;
 }
-/*
-.nw-bar-block.nw-center .nw-bar-item {
-    text-align:center;
-}*/
 
 .nw-button {
     border: none;

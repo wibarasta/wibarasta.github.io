@@ -4,13 +4,15 @@
 // Add Google Maps
 function myMap()
 {
-  myCenter=new google.maps.LatLng(-7.801378, 110.364765);
-  var mapOptions= {
+  myCenter = new google.maps.LatLng(-7.801378, 110.364765);
+  var mapOptions = {
     center:myCenter,
-    zoom:6, scrollwheel: false, draggable: false,
+    zoom:6, 
+    scrollwheel: true, 
+    draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
   var marker = new google.maps.Marker({
     position: myCenter,
