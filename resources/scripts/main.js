@@ -4,13 +4,13 @@
 // Add Google Maps
 function myMap()
 {
-  myCenter = new google.maps.LatLng(-7.801378, 110.364765);
+  var myCenter = new google.maps.LatLng(-7.801378, 110.364765);
   var mapOptions = {
-    center:myCenter,
+    center: myCenter,
     zoom:6, 
     scrollwheel: true, 
     draggable: true,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
@@ -22,11 +22,16 @@ function myMap()
 
 
 // Modal Image Gallery
-function onClick(element) {
+function openModal(element) {
+  //document.getElementById("mainContainer").className = "nw-blur";
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+
+function closeModal(element) {
+  document.getElementById("modal01").style.display = "none";
 }
 
 // Change style of navbar on scroll

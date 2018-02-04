@@ -416,6 +416,18 @@ a {
 .nw-transparent {
     background-color: transparent!important;
 }
+
+.nw-blur {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+}
+
+.is-visuallyHidden {
+    opacity: 0;
+}
 /* end section 7 */
 
 /* section 9 */

@@ -107,29 +107,29 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="nw-row-padding nw-center">
     <div class="nw-col m3">
-      <img src="resources/data/images/capacitors.jpeg" style="width:100%" onclick="onClick(this)" class="nw-hover-opacity" alt="Electrolytic Capacitors Manufacturing.">
+      <img src="resources/data/images/capacitors.jpeg" style="width:100%" onclick="openModal(this)" class="nw-hover-opacity" alt="Electrolytic Capacitors Manufacturing.">
     </div>
 
     <div class="nw-col m3">
-      <img src="resources/data/images/optical-drives.jpg" style="width:100%" onclick="onClick(this)" class="nw-hover-opacity" alt="Optical Drives Manufacturing.">
+      <img src="resources/data/images/optical-drives.jpg" style="width:100%" onclick="openModal(this)" class="nw-hover-opacity" alt="Optical Drives Manufacturing.">
     </div>
 
     <div class="nw-col m3">
-      <img src="resources/data/images/pexels-photo-87236.jpeg" style="width:100%" onclick="onClick(this)" class="nw-hover-opacity" alt="Oil & Gas Equipment & Services, particularly for Wellhead Control Panel provision.">
+      <img src="resources/data/images/pexels-photo-87236.jpeg" style="width:100%" onclick="openModal(this)" class="nw-hover-opacity" alt="Oil & Gas Equipment & Services, particularly for Wellhead Control Panel provision.">
     </div>
 
     <div class="nw-col m3">
-      <img src="resources/data/images/wellhead.jpg" style="width:100%" onclick="onClick(this)" class="nw-hover-opacity" alt="Oil & Gas Equipment & Services, particularly for Wellhead and Gate Valve provision.">
+      <img src="resources/data/images/wellhead.jpg" style="width:100%" onclick="openModal(this)" class="nw-hover-opacity" alt="Oil & Gas Equipment & Services, particularly for Wellhead and Gate Valve provision.">
     </div>
   </div>
 </div> 
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="nw-modal nw-text-white" onclick="this.style.display='none'">
+<div id="modal01" class="nw-modal" onclick="closeModal(this)">
   <span class="nw-button nw-large nw-black nw-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="nw-modal-content nw-animate-zoom nw-center nw-transparent nw-padding-64">
     <img id="img01" class="nw-image">
-    <p id="caption" class="nw-opacity nw-large"></p>
+    <p id="caption" class="nw-large nw-text-white"></p>
   </div>
 </div>
     
@@ -190,7 +190,6 @@
  
 <script src="resources/scripts/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyR4ft6YK193apndHoN_LNm3JYsCr0xMA&callback=myMap"></script>
-
 
 </body>
 </html>
