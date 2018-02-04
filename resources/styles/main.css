@@ -387,7 +387,7 @@ a {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
 }
 
 .nw-modal-content {
@@ -416,18 +416,22 @@ a {
 .nw-transparent {
     background-color: transparent!important;
 }
-
+/*
 .nw-blur {
-    filter: blur(2px);
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -ms-filter: blur(2px);
     -o-filter: blur(2px);
+    filter: blur(2px);
 }
 
-.is-visuallyHidden {
-    opacity: 0;
-}
+.nw-no-blur {
+    -webkit-filter: blur(0px)!important;
+    -moz-filter: blur(0px)!important;
+    -ms-filter: blur(0px)!important;
+    -0-filter: blur(0px)!important;
+    filter: blur(0px)!important;
+}*/
 /* end section 7 */
 
 /* section 9 */

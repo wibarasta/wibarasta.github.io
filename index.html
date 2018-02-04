@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="resources/styles/main.css">
 <body>
 
+
 <!-- Navbar (sit on top) -->
 <div class="nw-top">
   <div class="nw-bar" id="myNavbar">
@@ -35,7 +36,7 @@
     <!-- <a href="#" class="nw-bar-item nw-button">SEARCH</a> -->
   </div>
 </div>
-
+    
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 nw-display-container nw-opacity-min" id="home">
   <div class="nw-display-middle" style="white-space:nowrap;">
@@ -123,15 +124,6 @@
     </div>
   </div>
 </div> 
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="nw-modal" onclick="closeModal(this)">
-  <span class="nw-button nw-large nw-black nw-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="nw-modal-content nw-animate-zoom nw-center nw-transparent nw-padding-64">
-    <img id="img01" class="nw-image">
-    <p id="caption" class="nw-large nw-text-white"></p>
-  </div>
-</div>
     
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 nw-display-container nw-opacity-min">
@@ -173,7 +165,7 @@
     </div>
   </div>
 </div>
-
+    
 <!-- Footer -->
 <footer class="nw-center nw-black nw-padding-64 nw-opacity nw-hover-opacity-off">
   <a href="#home" class="nw-button nw-light-grey"><i class="fa fa-arrow-up nw-margin-right"></i>To the top</a>
@@ -187,7 +179,16 @@
   by NENDAR WIBARASTA.
   </div>
 </footer>
- 
+    
+<!-- Modal for full size images on click-->
+<div id="modal01" class="nw-modal" onclick="closeModal(this)">
+  <span class="nw-button nw-large nw-black nw-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="nw-modal-content nw-animate-zoom nw-center nw-transparent nw-padding-64">
+    <img id="img01" class="nw-image">
+    <p id="caption" class="nw-large nw-text-white"></p>
+  </div>
+</div>    
+
 <script src="resources/scripts/main.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyR4ft6YK193apndHoN_LNm3JYsCr0xMA&callback=myMap"></script>
 
