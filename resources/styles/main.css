@@ -366,6 +366,13 @@ a {
 }
 /* end section 4 */
 
+/* section 4a */
+.nw-section1 {
+    margin-top: 18px!important;
+    margin-bottom: 18px!important;
+}
+/* end section 4a */
+
 /* section 5 */
 .nw-xxlarge {
     font-size: 36px!important;
